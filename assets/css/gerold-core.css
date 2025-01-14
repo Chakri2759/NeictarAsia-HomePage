@@ -5021,11 +5021,11 @@ START: Theme Portfolio CSS
   margin-bottom: 25px;
   overflow: hidden;
   border-radius: 15px;
-  object-fit: cover;
-  height:300px;
-  width: 400px;
-  
+  width: 100%; /* Allow the width to adjust to the container */
+  max-width: 400px; /* Optional: Maximum width for the box */
+  height: 300px; /* Fixed height */
 }
+
 .portfolio-item.style-5 .image-box img {
   border-radius: 15px;
   -webkit-transition: 0.4s;
@@ -5033,9 +5033,11 @@ START: Theme Portfolio CSS
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-          height:300px;
-          width: 400px;      
+  width: 100%; /* Image fills the width of the container */
+  height: 100%; /* Image fills the height of the container */
+  object-fit: cover; /* Ensures the image covers the box without distortion */
 }
+
 .portfolio-item.style-5 .content-box {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -86,6 +86,8 @@ body {
 }
 .newsletter-message {
     color: #C2C4C8;
+    margin-left: 100px;
+    
 }
 .input-box {
     /* border: solid; */
